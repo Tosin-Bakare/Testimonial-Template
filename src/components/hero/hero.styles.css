@@ -1,0 +1,22 @@
+@media only screen and (max-width: 600px) {
+  .bigdiv {
+    width: 100%;
+    padding: 30px 15px;
+    text-align: left;
+    height: 50%;
+    font-size: small;
+  }
+  .title {
+    font-size: xx-large;
+  }
+  .words {
+    text-align: left;
+    padding-top: 2%;
+  }
+  .form {
+    padding-top: 5%;
+  }
+  .agreement {
+    padding-top: 2%;
+  }
+}

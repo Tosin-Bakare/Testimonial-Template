@@ -1,5 +1,4 @@
 import React from "react";
-// import Avater from "../../assets/User_Avatar-removebg-preview (1).png";
 
 export default class Testimonial extends React.Component {
   state = {
@@ -26,27 +25,30 @@ export default class Testimonial extends React.Component {
     return (
       <div>
         {this.state.loading || !this.state.person ? (
-          <div>Loading...</div>
+          <div className="text-blue-900">Loading...</div>
         ) : (
           <div>
-            <h1 className="p-6 font-bold text-3xl" style={{ color: "#2F1893" }}>
+            <h1
+              className="testimonial p-6 font-bold text-3xl"
+              style={{ color: "#2F1893" }}
+            >
               Testimonials
             </h1>
-            <div className="grid grid-cols-2 gap-0 md:grid-cols-2 place-items-center">
+            <div className="  md:grid  grid-cols-2 gap-0 md:grid-cols-2 place-items-center">
               {this.state.person
                 .filter((person, index) => index < 4)
                 .map((person) => (
-                  <div className="flex" key={person.id}>
+                  <div className="flex " key={person.id}>
                     <div className="">
                       <div className="px-10 flex items-center justify-center">
                         <div className="flex justify-center py-2">
                           <img
-                            className="h-20 w-20 rounded-full mb-2"
+                            className=" h-20 w-25 rounded-full mb-2"
                             src={person.picture}
                             alt="avatar"
                           />
                         </div>
-                        <div className="py-4">
+                        <div className="py-2">
                           <div className="flex jusify-center py-4 text-gray-400 text-left pl-8 leading-relaxed">
                             <p>
                               Extremely easy to use, helped us develop <br />{" "}
@@ -56,7 +58,10 @@ export default class Testimonial extends React.Component {
                               again for other projects.
                             </p>
                           </div>
-                          <div className="text-sm font-extrabold flex justify-left text-blue-900 pl-8 uppercase">
+                          <div
+                            className="text-sm font-extrabold flex justify-left pl-8 uppercase"
+                            style={{ color: "#2F1893" }}
+                          >
                             {`${person.firstName} ${person.lastName}`}
                           </div>
                         </div>
