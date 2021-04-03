@@ -2,19 +2,19 @@ import React from "react";
 
 const HeroContent = () => (
   <div
-    className="text-white pt-10"
-    style={{ backgroundColor: "#2F1893", height: "45vh" }}
+    className="text-white pt-12 md:h-screen"
+    style={{ backgroundColor: "#2F1893", height: "50vh" }}
   >
-    <h1 className="pt-10 font-extrabold text-5xl ">
+    <h1 className="pt-10 font-extrabold text-5xl">
       {" "}
-      Let's make design <br /> <h1 className="pt-2">fast and easy</h1>{" "}
+      Let's make design <br /> fast and easy{" "}
     </h1>
-    <p className="pt-6 text-center">
+    <p className="pt-10 text-center md:justify-left">
       The most important part of the Startup is the samples.
       <br /> The samples form a set of 25 usable pages you can use as <br />
       is or you can add new blocks from UI Kit.{" "}
     </p>
-    <div className="pt-10">
+    <div className="pt-16">
       <form>
         <label>
           <input

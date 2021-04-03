@@ -32,7 +32,7 @@ export default class Testimonial extends React.Component {
             <h1 className="p-6 font-bold text-3xl" style={{ color: "#2F1893" }}>
               Testimonials
             </h1>
-            <div className="flex justify-center" style={{ width: "50%" }}>
+            <div className="grid grid-cols-2 gap-0 md:grid-cols-2 place-items-center">
               {this.state.person
                 .filter((person, index) => index < 4)
                 .map((person) => (
@@ -41,19 +41,22 @@ export default class Testimonial extends React.Component {
                       <div className="px-10 flex items-center justify-center">
                         <div className="flex justify-center py-2">
                           <img
-                            className="h-20 w-20 rounded-full"
+                            className="h-20 w-20 rounded-full mb-2"
                             src={person.picture}
                             alt="avatar"
                           />
                         </div>
                         <div className="py-4">
-                          <div className="flex jusify-center py-4 text-blue-900 text-left pl-4">
-                            I am amazed at how easy and user friendly the
-                            website is, DigiAjo has really helped me to <br />{" "}
-                            save better and given me financial boyauncy.I love
-                            the app, I'll definitely recomment to my loved ones.
+                          <div className="flex jusify-center py-4 text-gray-400 text-left pl-8 leading-relaxed">
+                            <p>
+                              Extremely easy to use, helped us develop <br />{" "}
+                              our Vote for George Washington micro-site <br />{" "}
+                              extre-mely quickly! We will definitely use it
+                              <br />
+                              again for other projects.
+                            </p>
                           </div>
-                          <div className="text-sm flex justify-left text-blue-900 pl-4">
+                          <div className="text-sm font-extrabold flex justify-left text-blue-900 pl-8 uppercase">
                             {`${person.firstName} ${person.lastName}`}
                           </div>
                         </div>
